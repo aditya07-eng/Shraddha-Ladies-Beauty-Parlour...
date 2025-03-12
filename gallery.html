@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Shraddha Ladies Beauty Parlour</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Our Gallery</h1>
+    </header>
+
+    <nav>
+        <a href="./index1.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <section class="gallery">
+        <div class="masonry">
+            <img src="./Shraddha galary/1739726069455.jpg" alt="Beauty Service 1" onclick="openModal(this)">
+            <img src="./Shraddha galary/1739726069356.jpg" alt="Beauty Service 2" onclick="openModal(this)">
+            <img src="./Shraddha galary/1739726069361.jpg" alt="Beauty Service 3" onclick="openModal(this)">
+            <img src="./Shraddha galary/1739726069383.jpg" alt="Beauty Service 4" onclick="openModal(this)">
+            <img src="./Shraddha galary/1739726069414.jpg" alt="Beauty Service 5" onclick="openModal(this)">
+            <img src="./Shraddha galary/1739726069404.jpg" alt="Beauty Service 6" onclick="openModal(this)">
+            <img src="./Shraddha galary/1739726069423.jpg" alt="Beauty Service 7" onclick="openModal(this)">
+            <img src="./Shraddha galary/1739726069423.jpg" alt="Beauty Service 8" onclick="openModal(this)">
+        </div>
+    </section>
+
+    <!-- Modal for Enlarged Image -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Shraddha Ladies Beauty Parlour. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openModal(img) {
+            document.getElementById("imageModal").style.display = "flex";
+            document.getElementById("modalImg").src = img.src;
+        }
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
